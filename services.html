@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services – Cakrawala Travel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f6f7fb;
+      }
+
+      .header-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+          url("img//trav8.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeIn 2s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .service-card {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+
+      .service-card img {
+        width: 65px;
+        margin-bottom: 15px;
+      }
+
+      footer {
+        background: #222;
+        color: #aaa;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Cakrawala Travel</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link active">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header-section">
+      <div class="container">
+        <h1 class="fw-bold">Layanan Kami</h1>
+        <p class="lead">Pilihan layanan terbaik untuk perjalanan Anda</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <!-- Paket Tour -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/854/854929.png"
+              alt="Tour Icon"
+            />
+            <h4 class="fw-bold">Paket Wisata Domestik</h4>
+            <p>
+              Jelajahi destinasi terbaik Indonesia: Bali, Lombok, Jogja, Raja
+              Ampat, Labuan Bajo, dan lainnya.
+            </p>
+          </div>
+        </div>
+
+        <!-- Luar Negeri -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+              alt="International Travel"
+            />
+            <h4 class="fw-bold">Paket Wisata Internasional</h4>
+            <p>
+              Liburan ke Jepang, Korea, Singapore, Malaysia, Eropa, dan banyak
+              negara menarik lainnya.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tiket Pesawat -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/860/860764.png"
+              alt="Ticket Icon"
+            />
+            <h4 class="fw-bold">Pemesanan Tiket Pesawat</h4>
+            <p>
+              Kami membantu pemesanan tiket pesawat dengan harga terbaik dan
+              proses cepat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hotel -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/854/854894.png"
+              alt="Hotel Icon"
+            />
+            <h4 class="fw-bold">Reservasi Hotel</h4>
+            <p>
+              Pilihan hotel terbaik dari budget hingga premium untuk menunjang
+              kenyamanan perjalanan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Transportasi -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/744/744465.png"
+              alt="Transport Icon"
+            />
+            <h4 class="fw-bold">Sewa Transportasi</h4>
+            <p>
+              Sewa mobil, bus pariwisata, dan kendaraan lainnya untuk kebutuhan
+              perjalanan wisata atau bisnis.
+            </p>
+          </div>
+        </div>
+
+        <!-- Custom Trip -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+              alt="Custom Trip Icon"
+            />
+            <h4 class="fw-bold">Custom Trip</h4>
+            <p>
+              Buat paket perjalanan sesuai keinginan: jadwal fleksibel,
+              destinasi bebas, dan layanan khusus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 Cakrawala Travel | Yayaaa</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
